@@ -1,5 +1,5 @@
-import asyncHandler from ('../utils/asyncHandler');
-import Plan from ('../models/Plan');
+import asyncHandler from '../utils/asyncHandler.js';
+import Plan from '../models/plan.js';
 
 const getPlans = asyncHandler(async (req, res, next) => {
   const plans = await Plan.find({ isActive: true }).sort('price');
@@ -76,7 +76,7 @@ const deletePlan = asyncHandler(async (req, res, next) => {
   });
 });
 
-export default {
+export {
   getPlans,
   getPlan,
   createPlan,

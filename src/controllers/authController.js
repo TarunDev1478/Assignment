@@ -1,6 +1,6 @@
-import  asyncHandler from ('../utils/asyncHandler');
-import  User from ('../models/User');
-import  { defaultMaxListeners } from ('supertest/lib/test');
+import  asyncHandler from '../utils/asyncHandler.js';
+import  User from '../models/user.js'
+
 
 const register = asyncHandler(async (req, res, next) => {
   const { name, email, password } = req.body;
@@ -76,7 +76,7 @@ const sendTokenResponse = (user, statusCode, res) => {
     });
 };
 
-export default {
+export {
   register,
   login,
   getMe

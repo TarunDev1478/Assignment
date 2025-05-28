@@ -85,7 +85,7 @@ const validateCreatePlan = [
   handleValidationErrors
 ];
 
-export default {
+export {
   validateRegistration,
   validateLogin,
   validateCreateSubscription,

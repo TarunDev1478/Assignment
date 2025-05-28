@@ -1,5 +1,5 @@
-import asyncHandler from ('../utils/asyncHandler');
-import subscriptionService from ('../services/subscriptionService');
+import asyncHandler from '../utils/asyncHandler.js';
+import subscriptionService from '../services/subscriptionService.js';
 
 const createSubscription = asyncHandler(async (req, res, next) => {
   const { planId } = req.body;
@@ -95,7 +95,7 @@ const cancelSubscription = asyncHandler(async (req, res, next) => {
     });
   });
   
-  export default  {
+  export {
     createSubscription,
     getSubscription,
     updateSubscription,

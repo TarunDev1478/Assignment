@@ -1,15 +1,15 @@
-import express from ('express');
+import express from 'express';
 const router = express.Router();
 import  {
   register,
   login,
   getMe
-} from ('../controllers/authController');
-import { protect } from ('../middleware/auth');
+} from '../controllers/authController.js';
+import { protect } from '../middleware/auth.js';
 import  {
   validateRegistration,
   validateLogin
-} from ('../middleware/validation');
+} from '../middleware/validation.js';
 
 router.post('/register', validateRegistration, register);
 router.post('/login', validateLogin, login);

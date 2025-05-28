@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken';
-import asyncHandler from '../utils/asyncHandler';
-import User from '../models/user';
-import config from '../config/config';
+import asyncHandler from '../utils/asyncHandler.js';
+import User from '../models/user.js';
+import config from '../config/config.js';
 
 
 const protect = asyncHandler(async (req, res, next) => {
@@ -38,4 +38,4 @@ const protect = asyncHandler(async (req, res, next) => {
   }
 });
 
-export default { protect };
+export { protect };

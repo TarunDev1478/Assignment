@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import { SUBSCRIPTION_STATUS } from '../utils/constant';
+import SUBSCRIPTION_STATUS  from '../utils/constant.js';
 
 const subscriptionSchema = new mongoose.Schema({
   userId: {

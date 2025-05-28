@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import {DURATION_UNITS} from "../utils/constant"
+import DURATION_UNITS from "../utils/constant.js"
 
 const planSchema = new mongoose.Schema({
   name: {

@@ -1,6 +1,6 @@
-import Subscription from ('../models/Subscription');
-import Plan from ('../models/plan');
-import  { SUBSCRIPTION_STATUS } from ('../utils/constant');
+import Subscription from '../models/Subscription.js';
+import Plan from '../models/plan.js';
+import  SUBSCRIPTION_STATUS  from '../utils/constant.js';
 
 
 class SubscriptionService {
@@ -143,4 +143,5 @@ class SubscriptionService {
   }
 }
 
-export default SubscriptionService();
+const subscriptionService = new SubscriptionService();
+export default subscriptionService;
