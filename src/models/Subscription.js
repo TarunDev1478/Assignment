@@ -77,4 +77,6 @@ subscriptionSchema.pre(/^find/, function(next) {
   next();
 });
 
-export default subscriptionSchema;
+
+const Subscription = mongoose.model('Subscription', subscriptionSchema);
+export default Subscription;

@@ -11,7 +11,7 @@ import  {
   validateLogin
 } from '../middleware/validation.js';
 
-router.post('/register', validateRegistration, register);
+router.post('/register', validateRegistration,register);
 router.post('/login', validateLogin, login);
 router.get('/me', protect, getMe);
 

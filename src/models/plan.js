@@ -1,5 +1,7 @@
 import mongoose from "mongoose";
-import DURATION_UNITS from "../utils/constant.js"
+import constants from "../utils/constant.js"; 
+
+const { DURATION_UNITS } = constants; 
 
 const planSchema = new mongoose.Schema({
   name: {
@@ -51,4 +53,5 @@ planSchema.pre(/^find/, function(next) {
   next();
 });
 
-export default planSchema;
+const Plan = mongoose.model('Plan', planSchema);
+export default Plan;

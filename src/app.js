@@ -42,8 +42,8 @@ const limiter = rateLimit({
 });
 app.use('/api', limiter);
 
-// Prevent NoSQL injection attacks
-app.use(mongoSanitize());
+// // Prevent NoSQL injection attacks
+// app.use(mongoSanitize());
 
 // Health check endpoint
 app.get('/health', (req, res) => {
